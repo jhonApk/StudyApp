@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+    
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -12,25 +14,46 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Educatech_app">
         <activity
-            android:name=".ConfirmEmailActivity"
+            android:name=".Fragments.ProfileFragment"
+            android:exported="false"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".Fragments.ResumosFragment"
+            android:exported="false"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".Fragments.HomeFragment"
+            android:exported="false"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".Fragments.ExerciciosFragment"
+            android:exported="false"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".Activites.NewPasswordActivity"
             android:exported="false" />
         <activity
-            android:name=".NewPasswordActivity"
+            android:name=".Activites.VerificaCodigoPassActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activites.ConfirmEmailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activites.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activites.VerificaEmailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activites.RegisterActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
-            android:exported="false" />
-        <activity
-            android:name=".GetStartedActivity"
-            android:exported="false" />
-        <activity
-            android:name=".RegisterActivity"
+            android:name=".Activites.GetStartedActivity"
             android:exported="true"
-            android:windowSoftInputMode="adjustResize|stateHidden">
-
+            android:windowSoftInputMode="adjustPan">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
