@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".Activites.NewPasswordActivity">
+    tools:context=".Activites.VerificaEmailActivity">
 
     <ImageButton
         android:id="@+id/btn_voltarNovaSenha"
@@ -62,59 +62,33 @@
 
 
             <TextView
-                android:id="@+id/txt_newPassword"
+                android:id="@+id/txt_emailNewPass"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="34dp"
                 android:layout_marginTop="36dp"
                 android:fontFamily="@font/inter_medium"
-                android:text="Nova senha"
+                android:text="Email"
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 app:layout_constraintStart_toStartOf="parent" />
 
             <EditText
-                android:id="@+id/edt_newPassword"
+                android:id="@+id/edt_confirmEmailNewPass"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginStart="36dp"
                 android:layout_marginEnd="36dp"
                 android:autofillHints="emailAddress"
                 android:background="@drawable/bg_edt_text"
-                android:hint="Nova senha"
+                android:hint="Email"
                 android:padding="8dp"
                 android:textColor="@color/black"
                 android:textColorHint="#C8C8C8" />
-
-            <TextView
-                android:id="@+id/txt_confirmPassword"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="34dp"
-                android:layout_marginTop="16dp"
-                android:fontFamily="@font/inter_medium"
-                android:text="Confirme nova senha"
-                android:textColor="@color/black"
-                android:textSize="18sp"
-                app:layout_constraintStart_toStartOf="parent" />
-
-            <EditText
-                android:id="@+id/edt_confirmPassword"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginStart="36dp"
-                android:layout_marginEnd="36dp"
-                android:autofillHints="emailAddress"
-                android:background="@drawable/bg_edt_text"
-                android:hint="Confirm Password"
-                android:padding="8dp"
-                android:textColor="@color/black"
-                android:textColorHint="#C8C8C8" />
-
 
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/confirmNewPass"
+                android:id="@+id/confirmEmail"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_gravity="center"
@@ -128,11 +102,9 @@
                 android:fontFamily="@font/inter_bold"
                 android:shadowDy="4"
                 android:shadowRadius="20"
-                android:text="Confirmar"
+                android:text="Enviar"
                 android:textAllCaps="false"
                 android:textColor="@color/white" />
-
-
 
         </LinearLayout>
 

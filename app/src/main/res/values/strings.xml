@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">educatech_app</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    
+    
+    <string name="menu_bottom_bar_home">Home</string>
+    <string name="menu_bottom_bar_resumos">Resumos</string>
+    <string name="menu_bottom_bar_exercicios">Exercicios</string>
+    <string name="menu_bottom_bar_perfil">Perfil</string>
 </resources>

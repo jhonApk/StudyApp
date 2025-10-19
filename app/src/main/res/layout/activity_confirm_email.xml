@@ -5,6 +5,106 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ConfirmEmailActivity">
+    tools:context=".Activites.ConfirmEmailActivity">
+
+    <ImageButton
+        android:id="@+id/btn_voltarRegister"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@null"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="34dp"
+        android:layout_marginStart="24dp"
+        android:src="@drawable/keyboard_arrow_left_24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/black" />
+
+
+    <TextView
+        android:id="@+id/txt_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/inter_bold"
+        android:text="Register"
+        android:textSize="38sp"
+        android:textColor="@color/Title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_voltarRegister" />
+
+    <TextView
+        android:id="@+id/txt_registerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginStart="34dp"
+        android:text="Um codigo de verificação foi \nenviado para seu e-mail "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_login" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_registerText">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_codeEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="34dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/inter_medium"
+                android:text="Verificar Código"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/edt_codeEmail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="36dp"
+                android:layout_marginEnd="36dp"
+                android:background="@drawable/bg_edt_text"
+                android:hint="EX: 12344"
+                android:gravity="center"
+                android:paddingStart="8dp"
+                android:textColor="@color/black"
+                android:textColorHint="#C8C8C8" />
+
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginEnd="36dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_getstarted_screen"
+                android:elevation="8dp"
+                android:fontFamily="@font/inter_bold"
+                android:shadowDy="4"
+                android:shadowRadius="20"
+                android:text="Criar Conta"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

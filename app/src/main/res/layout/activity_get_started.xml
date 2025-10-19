@@ -5,8 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#D7CDCDCD"
-    tools:context=".GetStartedActivity">
+    android:background="#FFFFFF"
+    tools:context=".Activites.GetStartedActivity">
 
 
     <TextView
@@ -14,10 +14,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Educa tech"
-        android:textColor="@color/black"
+        android:textColor="@color/Title"
         android:textSize="48sp"
         android:layout_marginTop="68dp"
-        android:fontFamily="sans-serif-medium"
+        android:fontFamily="@font/inter_bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -40,17 +40,19 @@
         android:id="@+id/txt_description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="testetestetestetestetestetestetestetestetestetestetestetestetestetestetesteteste"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do"
         android:textColor="@color/black"
         android:textSize="24sp"
+        android:gravity="center"
         android:layout_marginTop="28dp"
-        android:fontFamily="sans-serif"
+        android:fontFamily="@font/inter_medium"
         android:padding="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logo_app" />
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bnt_getStarted"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:text="Get Started"
