@@ -107,6 +107,7 @@
         android:layout_height="140dp"
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
+        android:scrollbars="none"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/LayoutSearch">
 
@@ -121,20 +122,19 @@
                 android:layout_width="150dp"
                 android:layout_height="112dp"
                 android:layout_gravity="center"
-                android:backgroundTint="@color/white"
+                android:backgroundTint="#DBEAFE"
                 android:layout_marginStart="16dp"
-                app:cardElevation="20dp"
+                app:cardElevation="5dp"
                 app:cardCornerRadius="10dp">
 
 
                 <ImageView
-                        android:layout_width="40dp"
+                    android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:textColor="@color/Title"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="16dp"
-                    android:src="@drawable/ic_home"
-                    android:text="Exemplo"/>
+                    android:src="@drawable/ic_menu_book_24"
+                    app:tint="#1D4ED8" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -163,104 +163,170 @@
                 android:layout_width="150dp"
                 android:layout_height="112dp"
                 android:layout_gravity="center"
-                android:backgroundTint="@color/Title"
+                android:backgroundTint="#BBF7D0"
                 android:layout_marginStart="16dp"
-                app:cardElevation="20dp"
+                app:cardElevation="8dp"
                 app:cardCornerRadius="10dp">
 
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/white"
-                    android:text="Exemplo"/>
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:textColor="@color/Title"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/ic_atom"
+                    app:tint="#15803D" />
 
                 <TextView
-                    android:layout_marginTop="20sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/white"
-                    android:text="Exemplo"/>
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/inter_medium"
+                    android:layout_marginStart="16dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="30dp"
+                    android:textSize="14dp"
+                    android:text="Biologia"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_gravity="bottom"
+                    android:fontFamily="@font/inter"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:textSize="11dp"
+                    android:text="Ver resumo"/>
             </com.google.android.material.card.MaterialCardView>
-
 
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="150dp"
                 android:layout_height="112dp"
                 android:layout_gravity="center"
-                android:backgroundTint="#9B4949"
+                android:backgroundTint="#FEF3C7"
                 android:layout_marginStart="16dp"
-                app:cardElevation="20dp"
+                app:cardElevation="8dp"
                 app:cardCornerRadius="10dp">
 
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/white"
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:textColor="@color/Title"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/frame"
                     android:text="Exemplo"/>
 
                 <TextView
-                    android:layout_marginTop="20sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/white"
-                    android:text="Exemplo"/>
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/inter_medium"
+                    android:layout_marginStart="16dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="30dp"
+                    android:textSize="14dp"
+                    android:text="História"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_gravity="bottom"
+                    android:fontFamily="@font/inter"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:textSize="11dp"
+                    android:text="Ver resumo"/>
             </com.google.android.material.card.MaterialCardView>
-
 
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="150dp"
                 android:layout_height="112dp"
                 android:layout_gravity="center"
-                android:backgroundTint="#65C16B"
+                android:backgroundTint="#F3E8FF"
                 android:layout_marginStart="16dp"
-                app:cardElevation="20dp"
+                app:cardElevation="8dp"
                 app:cardCornerRadius="10dp">
 
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/white"
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:textColor="@color/Title"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/ic_book"
                     android:text="Exemplo"/>
 
                 <TextView
-                    android:layout_marginTop="20sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/white"
-                    android:text="Exemplo"/>
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/inter_medium"
+                    android:layout_marginStart="16dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="30dp"
+                    android:textSize="14dp"
+                    android:text="Português"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_gravity="bottom"
+                    android:fontFamily="@font/inter"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:textSize="11dp"
+                    android:text="Ver resumo"/>
             </com.google.android.material.card.MaterialCardView>
-
 
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="150dp"
                 android:layout_height="112dp"
                 android:layout_gravity="center"
-                android:backgroundTint="#341B1B"
+                android:backgroundTint="@color/white"
                 android:layout_marginStart="16dp"
-                app:cardElevation="20dp"
+                app:cardElevation="8dp"
                 app:cardCornerRadius="10dp">
 
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/white"
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:textColor="@color/Title"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/ic_home"
                     android:text="Exemplo"/>
 
                 <TextView
-                    android:layout_marginTop="20sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/white"
-                    android:text="Exemplo"/>
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/inter_medium"
+                    android:layout_marginStart="16dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="30dp"
+                    android:textSize="14dp"
+                    android:text="Ciências"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_gravity="bottom"
+                    android:fontFamily="@font/inter"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:textSize="11dp"
+                    android:text="Ver resumo"/>
             </com.google.android.material.card.MaterialCardView>
-
-
         </LinearLayout>
-
     </HorizontalScrollView>
 
 
@@ -301,9 +367,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="68"
+            android:text="68%"
             android:fontFamily="@font/inter_bold"
-            android:layout_marginStart="50dp"
+            android:layout_marginStart="35dp"
             android:layout_gravity="center_vertical"
             android:textSize="38sp"
             android:layout_marginTop="8dp"/>
